@@ -1,3 +1,33 @@
 @charset "UTF-8";
 /* CSS Document */
 
+/*MEDIA QUERIES*/
+/* 
+http://rachelmccollin.co.uk/blog/iphone5-does-it-break-your-responsive-design/
+What does each of those media queries do?
+max-width: 1023px targets screens smaller than the iPad in landscape – i.e iPads in portrait
+max-width: 759px targets screens smaller than the iPad in portrait – i.e smartphones in landscape, including the iPhone5
+max-width: 479px targets screens smaller than older iPhones and other smartphones in landscape – i.e. smartphones in portrait
+ 
+I used this to help determine the most effective media queries for the varied mobile platforms.
+another reference:  http://cssmediaqueries.com/
+*/
+@media screen and (max-width: 1023px) {
+
+}
+
+@media screen and (max-width: 759px) {
+
+}
+
+@media screen and (max-width: 479px) {
+li {
+  background: navy;
+  color: gold;
+  list-style: none;
+  float: none;
+  padding: 10px;
+  border: 1px solid gray;
+}
+}
+
