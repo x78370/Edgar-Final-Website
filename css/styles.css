@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
+/*GLOBAL*/
 
 /*MEDIA QUERIES*/
 /* 
@@ -55,15 +56,25 @@ another reference:  http://cssmediaqueries.com/
 }*/
 }
 
+/* Body */
+body {
+	background: #fbf6ed;
+	color: #002b5c;
+	font-family: 'Quicksand', sans-serif;
+}
+
+
 /*Navigation*/
 
 h1 {
 clear: left;
+font-size: 1.5em;
 }
 
-nav {
-
+.writeup {
+font-size: .75em;
 }
+
 /* CSS Menu styling */
 #cssmenu ul,
 #cssmenu li,
@@ -186,3 +197,19 @@ nav {
   text-align: center;
 }
 
+
+
+/* UL LI P styling */
+li {
+  list-style-type: none;
+  font-weight: normal;
+  font-size: 1em;
+}
+ul {
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+p {
+	font-size: 1.25em;
+}
