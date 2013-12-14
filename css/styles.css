@@ -11,7 +11,7 @@ max-width: 759px targets screens smaller than the iPad in portrait – i.e smart
 max-width: 479px targets screens smaller than older iPhones and other smartphones in landscape – i.e. smartphones in portrait
  
 I used this to help determine the most effective media queries for the varied mobile platforms.
-another reference:  http://cssmediaqueries.com/
+here's another reference:  http://cssmediaqueries.com/
 */
 @media screen and (min-width: 1024px) {
 /*li {
@@ -22,6 +22,13 @@ another reference:  http://cssmediaqueries.com/
   padding: 10px;
   border: 1px solid gray;
 }*/
+img {
+	max-width:95%;
+	max-height: 95%;
+}
+h1, body, p, ul, li {
+	font-size: 100%;
+}
 }
 @media screen and (max-width: 1023px) {
 /*li {
@@ -32,6 +39,13 @@ another reference:  http://cssmediaqueries.com/
   padding: 10px;
   border: 1px solid gray;
 }*/
+img {
+	width:85%;
+	height: 85%;
+}
+h1, body, p, ul, li {
+	font-size: 100%;
+}
 }
 
 @media screen and (max-width: 759px) {
@@ -43,7 +57,15 @@ another reference:  http://cssmediaqueries.com/
   padding: 10px;
   border: 1px solid gray;
 }*/
+img {
+	width:75%;
+	height: 75%;
 }
+h1, body, p, ul, li {
+	font-size: 85%;
+}
+}
+
 
 @media screen and (max-width: 479px) {
 /*li {
@@ -54,6 +76,48 @@ another reference:  http://cssmediaqueries.com/
   padding: 10px;
   border: 1px solid gray;
 }*/
+img {
+	width:50%;
+	height: 50%;
+		
+}
+h1, body, p, ul, li {
+	font-size: 70%;
+}
+/* cannot figure out how to omit menu items at certain display sizes and then float the visible ones together */
+#cssmenu li:nth-child(4) 
+{
+	visibility: hidden;
+}
+#cssmenu li:nth-child(5) 
+{
+	visibility: hidden;
+}
+#cssmenu li:nth-child(6) 
+{
+	visibility: hidden;
+}
+#cssmenu li:nth-child(7) 
+{
+	visibility: hidden;
+}
+#cssmenu li:nth-child(9) 
+{
+	visibility: hidden;
+}
+#cssmenu li:nth-child(11) 
+{
+	visibility: hidden;
+}
+#cssmenu li:nth-child(12) 
+{
+	visibility: hidden;
+}
+#cssmenu li:nth-child(13) 
+{
+	visibility: hidden;
+}
+/*this is a horrible hack */
 }
 
 /* Body */
@@ -69,6 +133,7 @@ body {
 h1 {
 clear: left;
 font-size: 1.5em;
+
 }
 
 .writeup {
@@ -199,17 +264,31 @@ font-size: .75em;
 
 
 
-/* UL LI P styling */
+/* styling */
 li {
   list-style-type: none;
   font-weight: normal;
   font-size: 1em;
+  text-align: center;
 }
+
 ul {
   font-weight: bold;
   font-size: 1.25em;
+  text-align: center;
 }
 
 p {
 	font-size: 1.25em;
+	text-align: center;
 }
+
+img {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	padding: 1%;
+}
+
+
+
